@@ -14,10 +14,10 @@ def taxRate(province):
     }
     return tax[province]
 
-def macmerchCalculator():
+def mcmerchCalculator():
     arguments = parseArguments()
     tax = taxRate(arguments['province'])
     print(arguments['price'] * arguments['quantity'] * (1 + tax))
 
-macmerchCalculator()
+mcmerchCalculator()
 
